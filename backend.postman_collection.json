@@ -1,0 +1,250 @@
+{
+	"info": {
+		"_postman_id": "eb468f7f-ab42-4158-8b5a-d5dc578eb66d",
+		"name": "backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27392577"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"phone_number\":34191360,\n    \"password\": 1234\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/token/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"token",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"phone_number\":34191360,\n    \"password\": 1234\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/token/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"token",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Teacher",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE0NDIwMzg0LCJpYXQiOjE3MTQ0MTY3ODQsImp0aSI6ImNkMzI2ZWFlNzM3YzRiYjI4NmU0NjVlYzBmZTg3Zjc0IiwidXNlcl9pZCI6ImU5NDI3NGY2LTFjNzctNDFjNS04YTVlLThiMTBlZDY5ZTc3NiJ9.7REaA9dOzXkjcDTkkIa7kbirUqtzsMZ4MGUSpD8qUPk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"phone\": 33367080,\n    \"name\": \"Hayati\",\n    \"language\": \"Arabic\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/teachers/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"teachers",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getTeachersByLanguage",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE0NDAyNjg1LCJpYXQiOjE3MTQzOTkwODUsImp0aSI6ImJlZjM0Y2U5YWQ2ZjQxMzBhMDc3NmZlNTE1YjAwZWJlIiwidXNlcl9pZCI6IjA1ZTg4Nzc4LTI0MDYtNDcwYS1iY2QwLTI0ZDk0Njg5NmNjMiJ9.I-rr5Mm4KdbirlclxsOHDVJ6Vn76u3YvWGal5mjvh_w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/teachers/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"teachers",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getTeachersById",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE0NDAyNjg1LCJpYXQiOjE3MTQzOTkwODUsImp0aSI6ImJlZjM0Y2U5YWQ2ZjQxMzBhMDc3NmZlNTE1YjAwZWJlIiwidXNlcl9pZCI6IjA1ZTg4Nzc4LTI0MDYtNDcwYS1iY2QwLTI0ZDk0Njg5NmNjMiJ9.I-rr5Mm4KdbirlclxsOHDVJ6Vn76u3YvWGal5mjvh_w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/teachers/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"teachers",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add language",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE0NDIwMzg0LCJpYXQiOjE3MTQ0MTY3ODQsImp0aSI6ImNkMzI2ZWFlNzM3YzRiYjI4NmU0NjVlYzBmZTg3Zjc0IiwidXNlcl9pZCI6ImU5NDI3NGY2LTFjNzctNDFjNS04YTVlLThiMTBlZDY5ZTc3NiJ9.7REaA9dOzXkjcDTkkIa7kbirUqtzsMZ4MGUSpD8qUPk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Arabic\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/languages/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"languages",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get languages",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzE0NDIwMzg0LCJpYXQiOjE3MTQ0MTY3ODQsImp0aSI6ImNkMzI2ZWFlNzM3YzRiYjI4NmU0NjVlYzBmZTg3Zjc0IiwidXNlcl9pZCI6ImU5NDI3NGY2LTFjNzctNDFjNS04YTVlLThiMTBlZDY5ZTc3NiJ9.7REaA9dOzXkjcDTkkIa7kbirUqtzsMZ4MGUSpD8qUPk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Arabic\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/languages/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"languages",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
