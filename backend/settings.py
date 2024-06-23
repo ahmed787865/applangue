@@ -27,7 +27,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -93,9 +92,9 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": "bd_app_bel",
-        "USER": "postgres",
-        "PASSWORD": "postgres",
+        "NAME": "backend",
+        "USER": "admin",
+        "PASSWORD": "admin",
         "HOST": "127.0.0.1",
         "PORT": "5432",
     }
