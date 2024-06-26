@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<div class="container mt-4">
+    <h2 class="mb-3">Teacher Details</h2>
+    <div class="card shadow-sm">
+        <div class="card-body">
+
+            <!-- Grid layout for two items per row -->
+            <div class="row">
+                <div class="col-md-6">
+                    <p><i class="fas fa-tags"></i> <strong>ID:</strong> #{{ order.id }}</p>
+                  <i class="fa-solid fa-signature"></i><strong>Name:</strong> {{ order.name }}</p>
+                    <i class="fa-solid fa-language"></i> <strong>Language:</strong> {{ order.language.name }}</p>
+
+                    <i class="fa-solid fa-school"></i>  <strong>niveau d'etude:</strong> {{ order.niveau_etude}}</p>
+                    <p><i class="fas fa-user"></i> <strong>experience:</strong> {{ order.experience }}</p>
+
+                </div>
+                <div class="col-md-6">
+                    <p><i class="fas fa-calendar-alt"></i> <strong>Creation date:</strong> {{ order.Joined|date:"d-m-Y H:i" }}</p>
+                    <!-- Repeating blocks for different dates -->
+                    {% for date_type in date_types %}
+                    <p><i class="fas fa-calendar-check"></i> <strong>{{ date_type|capfirst }} date:</strong> {{ date|date:"d-m-Y H:i" }}</p>
+                    {% endfor %}
+                </div>
+            </div>
+
+
+
+            <!-- Displaying images and audio if they exist -->
+
+            </div>
+        </div>
+    </div>
+    {% endblock content %}

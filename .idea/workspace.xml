@@ -5,7 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c4b2779-e4ea-46b0-91d0-4635b2058468" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/teachers/templates/etudiants.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/teachers/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/teachers/templates/langues.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/teachers/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/teachers/templates/new_langue.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/teachers/templates/new_teacher.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/teachers/templates/new_user.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/teachers/templates/teacher_details.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/teachers/templates/teacher_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/teachers/templates/templatess.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/teachers/templates/update_langue.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/teachers/templates/update_teacher.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/teachers/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teachers/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/teachers/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teachers/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/teachers/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teachers/templates/teachers.html" beforeDir="false" afterPath="$PROJECT_DIR$/teachers/templates/teachers.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teachers/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/teachers/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teachers/viewsets.py" beforeDir="false" afterPath="$PROJECT_DIR$/teachers/viewsets.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,30 +54,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Django Server.backend.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/ahmed/Documents/memoire_fin/applangue&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Django Server.backend.executor": "Run",
+    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/ahmed/Documents/memoire_fin/applangue/teachers",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/teachers" />
       <recent name="$PROJECT_DIR$/backend" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -117,7 +136,7 @@
       <workItem from="1719140985540" duration="2076000" />
       <workItem from="1719218042090" duration="599000" />
       <workItem from="1719235422084" duration="599000" />
-      <workItem from="1719395416244" duration="599000" />
+      <workItem from="1719395416244" duration="1315000" />
     </task>
     <servers />
   </component>

@@ -1,13 +1,12 @@
 {% load i18n %}
 {% load static %}
-{% load is_active %}
 <!DOCTYPE html>
 <html>
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>WeeWork</title>
+    <title>App Langues</title>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
@@ -139,19 +138,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="{% static 'core/js/selectize.min.js' %}"></script>
 
-    <!--Script for form
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-            crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9I  OYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-            crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-            crossorigin="anonymous"></script>
-            -->
-
-
 </head>
 <body>
 <div class="container-fluid">
@@ -159,44 +145,31 @@
         <!-- Sidebar -->
         <div class="col-lg-2 col-md-3 col-sm-12 bg-light sidebar">
             <nav class="navbar  navbar-light bg-light  ">
-                <a class="navbar-brand" href="{% url 'main_app_home' %}">
-                    <img src="{% static 'img/logo.png' %}" alt="Logo" style="width:80%" align="center" loading="lazy">
+                <a class="navbar-brand" href="{% url 'home' %}">
+                    <img src="{% static 'taalimak.jpeg' %}" alt="Logo" style="width:80%" align="center" loading="lazy">
                 </a>
-
-                <ul class="navbar-nav flex-column">
-                    <li class="nav-item {% if request.path == '/' %} active {% endif %}">
-                        <a class="nav-link " href="{% url 'main_app_home' %}"><i class="fa-solid fa-house"></i> Home</a>
+                  <ul class="navbar-nav flex-column">
+                    <li class="nav-item { 'Allteachers' }">
+                        <a class="nav-link " href="{% url 'Allteachers' %}"><i class="fa-solid fa-house"></i> Home</a>
                       </li>
-                    <li class="nav-item {% is_active request 'teachers' %}">
-                        <a class="nav-link " href="{% url 'teachers' %}"><i class="fa-solid fa-wrench"></i>
-                            Categories</a>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="{% url  'Allteachers' %}"><i class="fa-solid fa-wrench"></i>
+                            Enseignants</a>
                     </li>
                     <!-- Add more sidebar links as needed -->
+                    <li class="nav-item ">
+                        <a class="nav-link " href=""><i class="fa-solid fa-list"></i>
+                            Etudiants</a>
+                    </li>
 
-
-                </ul>
-                <ul class="nav navbar-nav ">
-                    {% if user.is_superuser %}
-                        <li class="nav-item {% is_active request 'admins' %}">
-                            <a class="nav-link " href="{% url 'admins' %}">
-                                <i class="fal fa-users"></i>
-                                Admins</a>
-                        </li>
-                    {% endif %}
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fal fa-user"></i>
-                            {{ user }}
-                        </a>
-
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="{% url 'logout_view' %}">
-                                <i class="fad fa-sign-out"></i>
-                                Déconnexion</a>
-                        </div>
+                         <li class="nav-item { 'langues' } ">
+                        <a class="nav-link " href="{% url  'langues' %}"><i class="fa-solid fa-list"></i>
+                            Langue</a>
                     </li>
                 </ul>
+
+
+
 
 
             </nav>

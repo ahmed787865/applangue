@@ -59,8 +59,8 @@
         <div class="col"></div>
         <div class="col"></div>
         <div class="col">
-            <a href="{% url 'new_teacher' %}">
-                <button type="button" class="btn btn-primary btn-sm"><span class="fal fa-plus">Add Teacher</span>
+            <a href="{% url 'new_langue' %}">
+                <button type="button" class="btn btn-primary btn-sm"><span class="fal fa-plus">Add Langue</span>
                 </button>
             </a>
         </div>
@@ -72,39 +72,35 @@
         <table class="module table table-striped table-bordered" id="example">
             <thead>
             <tr>
+                <th>id</th>
                 <th>name</th>
-                <th>Phone number</th>
-                <th>languagesh</th>
-                <th>niveau d'etude</th>
-                <th>Experience</th>
+                <th>image</th>
                 <th>Options</th>
 
             </tr>
             </thead>
             <tbody>
 
-            {% for t in teachers %}
+            {% for l in langues %}
                 <tr class="model-group module">
-                    <td> {{ t.name }} </td>
-                    <td> {{ t.phone_number }} </td>
-                    <td>{{ t.language.name }}</td>
-                    <td>{{ t.niveau_etude }}</td>
-                    <td>{{ t.experience }}</td>
+                    <td> {{ l.id }} </td>
+                    <td> {{ l.name }} </td>
+                      <td> {{ l.image }} </td>
                   <td>
 
-                        <a href="{% url 'edit_teacher' t.pk %}">
+                        <a href="{% url 'edit_langue' l.pk%}">
                             <button type="button" onclick="this.disabled=true,this.form.submit();"
                                     class="btn btn-warning btn-sm"><span class="fal fa-pencil"></span></button>
                         </a>
 
-                        <a href="{% url 'teacher_details' t.pk%}">
+                        <a href="">
                             <button type="button" onclick="this.disabled=true,this.form.submit();"
                                     class="btn btn-info btn-sm"><span class="fal fa-info-circle"></span></button>
                         </a>
 
 
-                        <a href="{% url 'delete_teacher' t.pk%}"
-                           onclick="return confirm(' Are you sure you want to delete this Teacher?')">
+                        <a href="{% url 'delete_langue' l.pk%}"
+                           onclick="return confirm(' Are you sure you want to delete this Langue?')">
                             <button type="button" class="btn btn-danger btn-sm"><span class="fal fa-trash"></span>
                             </button>
                         </a>
