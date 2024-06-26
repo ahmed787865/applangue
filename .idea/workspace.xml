@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c4b2779-e4ea-46b0-91d0-4635b2058468" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b4eb6897-a21f-436f-ba82-f41098befe73.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poetry.lock" beforeDir="false" afterPath="$PROJECT_DIR$/poetry.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +114,10 @@
       <workItem from="1718875699354" duration="2401000" />
       <workItem from="1718880950681" duration="7412000" />
       <workItem from="1718972343039" duration="1222000" />
-      <workItem from="1719140985540" duration="1200000" />
+      <workItem from="1719140985540" duration="2076000" />
+      <workItem from="1719218042090" duration="599000" />
+      <workItem from="1719235422084" duration="599000" />
+      <workItem from="1719395416244" duration="599000" />
     </task>
     <servers />
   </component>
