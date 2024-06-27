@@ -70,7 +70,7 @@
     <div class="col-custom-width">
     <h1> Create Etudiant </h1>
     <form method="post" method="POST" class="post-form" enctype="multipart/form-data" novalidate
-          action="{% url 'new_user' %}">
+          action="{% url 'new_etudiant' %}">
         {% csrf_token %}
         {{ form }}
         <button type="submit">Create Etudiant</button>

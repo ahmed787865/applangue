@@ -149,22 +149,45 @@
                     <img src="{% static 'taalimak.jpeg' %}" alt="Logo" style="width:80%" align="center" loading="lazy">
                 </a>
                   <ul class="navbar-nav flex-column">
-                    <li class="nav-item { 'Allteachers' }">
-                        <a class="nav-link " href="{% url 'Allteachers' %}"><i class="fa-solid fa-house"></i> Home</a>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="{% url 'Enseignants' %}"><i class="fa-solid fa-house"></i> Home</a>
                       </li>
                     <li class="nav-item ">
-                        <a class="nav-link " href="{% url  'Allteachers' %}"><i class="fa-solid fa-wrench"></i>
+                        <a class="nav-link " href="{% url  'Enseignants' %}"><i class="fa-solid fa-person-chalkboard"></i>
                             Enseignants</a>
                     </li>
                     <!-- Add more sidebar links as needed -->
                     <li class="nav-item ">
-                        <a class="nav-link " href=""><i class="fa-solid fa-list"></i>
+                        <a class="nav-link " href="{% url  'etudiants' %}"><i class="fa-solid fa-school"></i>
                             Etudiants</a>
                     </li>
 
-                         <li class="nav-item { 'langues' } ">
-                        <a class="nav-link " href="{% url  'langues' %}"><i class="fa-solid fa-list"></i>
+                         <li class="nav-item ">
+                        <a class="nav-link " href="{% url  'langues' %}"><i class="fa-solid fa-language"></i>
                             Langue</a>
+                    </li>
+                </ul>
+
+                  <ul class="nav navbar-nav ">
+                    {% if user.is_superuser %}
+                        <li class="nav-item ">
+                            <a class="nav-link " href="">
+                                <i class="fal fa-users"></i>
+                                User</a>
+                        </li>
+                    {% endif %}
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fal fa-user"></i>
+                            {{ user }}
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="{% url 'logout_view' %}">
+                                <i class="fad fa-sign-out"></i>
+                                Déconnexion</a>
+                        </div>
                     </li>
                 </ul>
 

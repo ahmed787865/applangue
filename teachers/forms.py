@@ -9,16 +9,11 @@ from django import forms
 from django.shortcuts import redirect, render, get_object_or_404
 
 
-class UserForm(forms.ModelForm):
-    username = forms.CharField(label="Phone Number",
-                               widget=forms.TextInput(attrs={'placeholder': 'Enter Phone Number'}))
-    password = forms.CharField(label="Password", widget=forms.PasswordInput(attrs={'placeholder': 'Enter Password'}))
-
 
 class UserForm(forms.ModelForm):
     class Meta:
         model = User
-        fields = ('phone_number', 'password')
+        fields = ('name','phone_number', 'password')
 
 
 class teacherForm(forms.ModelForm):
@@ -26,30 +21,36 @@ class teacherForm(forms.ModelForm):
 
     class Meta:
         model = Teacher
-        fields = ('name', 'phone_number', 'language')
+        fields = ('name', 'phone_number', 'niveau_etude','experience','language')
 
-
-class EditteacherForm(forms.ModelForm):
-    language = forms.ModelMultipleChoiceField(
-        queryset=Language.objects.all(),
-        widget=forms.Select,
-        to_field_name='name',
-        initial=Language.objects.all(),
-        required=False)
+class EditUserForm(forms.ModelForm):
 
     class Meta:
-        model = Teacher
-        fields = ('name', 'phone_number', 'language')
+        model = User
+        fields = ('name', 'phone_number')
 
         widgets = {
             'name': forms.TextInput(attrs={'class': 'form-control'}),
             'phone_number': forms.NumberInput(attrs={'class': 'form-control'}),
-            'niveau_etude': forms.TextInput(attrs={'class': 'form-control'}),
-            'experience': forms.TextInput(attrs={'class': 'form-control'}),
-            'language': forms.TextInput(attrs={'class': 'form-control'}),
 
         }
 
+
+class EditteacherForm(forms.ModelForm):
+   # language = forms.ModelMultipleChoiceField(
+    #    queryset=Language.objects.all(),
+    #    widget=forms.Select,
+    #    to_field_name='name',
+    #    required=False)
+
+    class Meta:
+        model = Teacher
+        fields = ('name', 'phone_number', 'niveau_etude','experience','language')
+
+        def __init__(self, *args, **kwargs):
+            super(EditteacherForm, self).__init__(*args, **kwargs)
+            # Customize the language field widget (optional)
+            self.fields['language'].widget.attrs = {'class': 'custom-language-dropdown'}
 
 class langueForm(forms.ModelForm):
     class Meta:
@@ -64,7 +65,7 @@ class langueForm(forms.ModelForm):
 class EditlangueForm(forms.ModelForm):
     class Meta:
         model = Language
-        fields = ('name', )
+        fields = ('name',)
 
     widgets = {
         'name': forms.TextInput(attrs={'class': 'form-control'}),

@@ -11,10 +11,19 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 from datetime import timedelta
 from pathlib import Path
+import os
 
+#######Token######
+#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#
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
+
+STATIC_URL = ('/static/')
+#STATICFILES_DIRS = [
+#os.path.join(BASE_DIR , 'static')
+#]
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
@@ -25,7 +34,7 @@ SECRET_KEY = 'django-insecure-+51-(ct=94=de$t6*2*-mv48!$63da=q7jgpe4u#vp)qv*d^w^
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -69,7 +78,7 @@ ROOT_URLCONF = 'backend.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates']
+        'DIRS': [BASE_DIR / 'templatesd']
         ,
         'APP_DIRS': True,
         'OPTIONS': {

@@ -5,25 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c4b2779-e4ea-46b0-91d0-4635b2058468" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/teachers/templates/etudiants.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/teachers/templates/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/teachers/templates/langues.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/teachers/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/teachers/templates/new_langue.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/teachers/templates/new_teacher.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/teachers/templates/new_user.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/teachers/templates/teacher_details.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/teachers/templates/teacher_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/teachers/templates/templatess.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/teachers/templates/update_langue.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/teachers/templates/update_teacher.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/teachers/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/france.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/lang.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/logo.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/taalimak.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/teachers/templates/update_etudiant.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/teachers/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/teachers/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teachers/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/teachers/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/teachers/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/teachers/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teachers/templates/etudiants.html" beforeDir="false" afterPath="$PROJECT_DIR$/teachers/templates/etudiants.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teachers/templates/new_user.html" beforeDir="false" afterPath="$PROJECT_DIR$/teachers/templates/new_etudiant.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teachers/templates/teacher_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/teachers/templates/teacher_details.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/teachers/templates/teachers.html" beforeDir="false" afterPath="$PROJECT_DIR$/teachers/templates/teachers.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/teachers/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/teachers/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teachers/viewsets.py" beforeDir="false" afterPath="$PROJECT_DIR$/teachers/viewsets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teachers/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/teachers/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +78,8 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/teachers" />
+      <recent name="$PROJECT_DIR$/teachers/templates" />
+      <recent name="$PROJECT_DIR$/static" />
       <recent name="$PROJECT_DIR$/backend" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -136,11 +137,23 @@
       <workItem from="1719140985540" duration="2076000" />
       <workItem from="1719218042090" duration="599000" />
       <workItem from="1719235422084" duration="599000" />
-      <workItem from="1719395416244" duration="1315000" />
+      <workItem from="1719395416244" duration="8881000" />
+      <workItem from="1719478759858" duration="6239000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/teachers/views.py</url>
+          <line>170</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
